@@ -12,7 +12,7 @@ tts:
 
 tplink:
   discovery: false
-  light:
+  switch:
     - host: 192.168.86.93
     - host: 192.168.86.92
     - host: 192.168.86.91
