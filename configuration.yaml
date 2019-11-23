@@ -11,13 +11,17 @@ tts:
   - platform: google_translate
 
 #kasa switches
-switch:
+switch1:
   - platform: tplink
     name: Sliding Door
     host: 192.168.86.93
+
+switch2:
   - platform: tplink
     name: Sunroom North
     host: 192.168.86.91
+
+switch3:
   - platform: tplink
     name: Sunroom South
     host: 192.168.86.92
