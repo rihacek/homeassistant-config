@@ -10,7 +10,20 @@ default_config:
 tts:
   - platform: google_translate
 
+#kasa switches
+switch:
+  - platform: tplink
+    name: Sliding Door
+    host: 192.168.86.93
+  - platform: tplink
+    name: Sunroom North
+    host: 192.168.86.91
+  - platform: tplink
+    name: Sunroom South
+    host: 192.168.86.92
+
 group: !include groups.yaml
 automation: !include automations.yaml
 script: !include scripts.yaml
 scene: !include scenes.yaml
+
