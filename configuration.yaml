@@ -15,7 +15,9 @@ tplink:
   switch:
     - host: 192.168.86.93
     - host: 192.168.86.92
-    - host: 192.168.86.91
+    - host: 192.168.86.43
+    - host: 192.168.86.32
+    - host: 192.168.86.99
 
 group: !include groups.yaml
 automation: !include automations.yaml
