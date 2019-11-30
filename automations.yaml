@@ -1,1 +1,53 @@
-[]
+- id: '1575139825644'
+  alias: Turn on Acorn in morning
+  description: ''
+  trigger:
+  - at: 05:15
+    platform: time
+  condition: []
+  action:
+  - device_id: 21b628765d2549ab8fec18ff34c9bd43
+    domain: switch
+    entity_id: switch.acorn
+    type: turn_on
+- id: '1575140516822'
+  alias: Turn off Acorn in morning
+  description: ''
+  trigger:
+  - at: 08:00
+    platform: time
+  condition: []
+  action:
+  - device_id: 21b628765d2549ab8fec18ff34c9bd43
+    domain: switch
+    entity_id: switch.acorn
+    type: turn_off
+- id: '1575140634970'
+  alias: Turn on Acorn at sunset
+  description: ''
+  trigger:
+  - event: sunset
+    offset: -00:30:00
+    platform: sun
+  condition: []
+  action:
+  - device_id: 21b628765d2549ab8fec18ff34c9bd43
+    domain: switch
+    entity_id: switch.acorn
+    type: turn_on
+- id: '1575140918602'
+  alias: Turn off Lights at midnight
+  description: ''
+  trigger:
+  - at: 0:00
+    platform: time
+  condition: []
+  action:
+  - device_id: 21b628765d2549ab8fec18ff34c9bd43
+    domain: switch
+    entity_id: switch.acorn
+    type: turn_off
+  - device_id: a40c7b7f39f44767aae9b3ff432a06ca
+    domain: switch
+    entity_id: switch.living_room_north
+    type: turn_off
