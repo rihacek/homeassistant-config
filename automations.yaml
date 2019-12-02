@@ -23,7 +23,7 @@
     entity_id: switch.acorn
     type: turn_off
 - id: '1575140634970'
-  alias: Turn on Acorn at sunset
+  alias: Turn on Lights at sunset
   description: ''
   trigger:
   - event: sunset
@@ -34,6 +34,14 @@
   - device_id: 21b628765d2549ab8fec18ff34c9bd43
     domain: switch
     entity_id: switch.acorn
+    type: turn_on
+  - device_id: d91c4c042d6441d3bceff2ad2a140f34
+    domain: switch
+    entity_id: switch.sliding_door
+    type: turn_on
+  - device_id: a40c7b7f39f44767aae9b3ff432a06ca
+    domain: switch
+    entity_id: switch.living_room_north
     type: turn_on
 - id: '1575140918602'
   alias: Turn off Lights at midnight
@@ -50,4 +58,8 @@
   - device_id: a40c7b7f39f44767aae9b3ff432a06ca
     domain: switch
     entity_id: switch.living_room_north
+    type: turn_off
+  - device_id: d91c4c042d6441d3bceff2ad2a140f34
+    domain: switch
+    entity_id: switch.sliding_door
     type: turn_off
