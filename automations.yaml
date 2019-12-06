@@ -47,7 +47,7 @@
   alias: Turn off Lights at midnight
   description: ''
   trigger:
-  - at: 23:00
+  - at: '23:00'
     platform: time
   condition: []
   action:
