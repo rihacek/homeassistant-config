@@ -28,12 +28,11 @@ tplink:
     #b0:4e:26:f5:dc:53  sunroom north     HS105
     - host: 192.168.86.99
 
-    
-    
-    
-    
-    
-
+cover:
+  #garage door automation via cloud
+  - platform: myq
+    username: !secret myQ_user
+    password: !secret myQ_password
 
 group: !include groups.yaml
 automation: !include automations.yaml
