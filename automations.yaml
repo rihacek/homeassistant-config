@@ -2,7 +2,7 @@
   alias: Turn on Acorn in morning
   description: ''
   trigger:
-  - at: 05:15
+  - at: 05:30
     platform: time
   condition: []
   action:
@@ -27,7 +27,7 @@
   description: ''
   trigger:
   - event: sunset
-    offset: -00:30:00
+    offset: -00:45:00
     platform: sun
   condition: []
   action:
@@ -47,7 +47,7 @@
   alias: Turn off Lights at midnight
   description: ''
   trigger:
-  - at: 0:00
+  - at: 23:00
     platform: time
   condition: []
   action:
